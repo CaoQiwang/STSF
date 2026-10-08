@@ -1,0 +1,85 @@
+# Effective PEMS settings from the authors' config at commit cc035f7.
+# in_steps and out_steps are selected by the section name and CLI task.
+PEMS04-24:
+  lr: 0.0001
+  milestones: [55]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 300
+  early_stop: 10
+  embedding_dim: 64
+  feed_forward_dim: 1024
+  num_heads: 4
+  num_layers: 1
+  mask_ratio: 0.2
+  subgraph_size: 50
+
+PEMS04-36:
+  lr: 0.0001
+  milestones: [65]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 200
+  early_stop: 10
+  embedding_dim: 64
+  feed_forward_dim: 1024
+  num_heads: 4
+  num_layers: 1
+  mask_ratio: 0.2
+  subgraph_size: 50
+
+PEMS04-48:
+  lr: 0.0001
+  milestones: [65]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 200
+  early_stop: 10
+  embedding_dim: 64
+  feed_forward_dim: 1024
+  num_heads: 4
+  num_layers: 1
+  mask_ratio: 0.2
+  subgraph_size: 50
+
+PEMS08-24:
+  lr: 0.0001
+  milestones: [65]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 300
+  early_stop: 10
+  embedding_dim: 32
+  feed_forward_dim: 1024
+  num_heads: 4
+  num_layers: 1
+  mask_ratio: 0.3
+  subgraph_size: 30
+
+PEMS08-36:
+  lr: 0.0001
+  milestones: [100]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 300
+  early_stop: 15
+  embedding_dim: 32
+  feed_forward_dim: 1024
+  num_heads: 4
+  num_layers: 1
+  mask_ratio: 0.2
+  subgraph_size: 30
+
+PEMS08-48:
+  lr: 0.0001
+  milestones: [65]
+  lr_decay_rate: 0.1
+  batch_size: 16
+  max_epochs: 300
+  early_stop: 10
+  embedding_dim: 64
+  feed_forward_dim: 1024
+  num_heads: 4
+  num_layers: 1
+  mask_ratio: 0.2
+  subgraph_size: 30
